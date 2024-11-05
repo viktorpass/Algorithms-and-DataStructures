@@ -18,9 +18,9 @@ Cada algoritmo ou estrutura de dados é armazenado em uma pasta própria e docum
 - **Árvores** (e.g., Árvore Binária de Busca, AVL)
 - **Grafos** (e.g., BFS, DFS)
 
-## Requisitos
+## Linguagens utilizadas
 
-As implementações foram feitas em C/C++.
+As implementações até o momento foram feitas em C/C++.
 
 ## Como Contribuir
 
