@@ -1,22 +1,35 @@
 #include <iostream>
 using namespace std;
-int main(){
+
+void InsertionSort(int array[], int size){
     int i,j,key;
-    int numbers[] = {2,6,3,1,65,4353};
-    for(j=1;j<=5;j++){
-        key = numbers[j];
+    for(j=1; j <= size; j++){
+        key = array[j];
+        i = j - 1;
 
-        i = j -1;
-
-        while(i >= 0 && numbers[i] > key){
-            numbers[i+1] = numbers[i];
-            i = i -1;
+        while(i>=0 && array[i] > key){
+            array[i+1] = array[i];
+            i = i - 1;
         }
-        numbers[i+1] = key;
+        array[i + 1] = key;
     }
-    for(int a = 0;a<=5;a++){
-        cout<< numbers[a] << " ";
+}
+
+void printArray(int array[], int size){
+    for(int i = 0; i <= size; i++){
+        cout<< array[i] << " " ;
     }
+}
+
+int main(){
+    int array[] = {4,7,12,66,34,23,11,2,27,1};
+    int size = sizeof(array) / sizeof(array[0]);
+
+    InsertionSort(array,size);
+    printArray(array,size);
+
+
+    return 0;
 
 }
 
